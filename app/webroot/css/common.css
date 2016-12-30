@@ -1,0 +1,64 @@
+::selection {
+	color: #131313 !important;
+	background: #ff1d3f !important;
+}
+::-moz-selection {
+	color: #131313 !important;
+	background: #ff1d3f !important;
+}
+
+.btn-pinky {
+	color: white;
+	background-color: #FF5766;
+	border-color: #d43f3a;
+}
+.btn-pinky:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #c9302C;
+	border-color: #ac2925;
+}
+.pinky {
+	color: #FF5766;
+}
+.pinky:hover {
+	color: #d9534f;
+	text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input:not([type=submit]), select, textarea {
+	display: block;
+	width: 100%;
+	height: 40px;
+	min-height: 40px;
+	padding: 0 9px;
+	margin: 0;
+	line-height: 22px;
+	border: 1px solid #dfdfdf;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	outline: none;
+	background: #fff;
+	color: #5f6a7d;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 15px
+}
+
+input:not([type=submit]):focus, select:focus, textarea:focus, input:not([type=submit]):active, select:active, textarea:active {
+	border: 1px solid #aaa;
+	color: #444;
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
+}
+
+.col-center {
+	text-align: center;
+}

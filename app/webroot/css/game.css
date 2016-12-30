@@ -1,0 +1,185 @@
+@font-face {
+    font-family: monolithic;
+    src: url(../fonts/Halo3.ttf);
+}
+
+html, body {
+	color: #61443e;
+	font-family:monolithic;
+	font-size:13px;
+	text-align:center;
+
+	/* background-color: #bfd1e5; */
+	background-color: #000000;
+	margin: 0px;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+a {	color: #a06851;	}
+
+#info {
+	position: absolute;
+	top: 0px; width: 100%;
+	padding: 5px;
+}
+
+#oldie {
+	background:rgb(100,0,0) !important;
+	color:#fff !important;
+	margin-top:10em !important;
+}
+#oldie a { color:#fff }
+#blood-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	opacity: 0;
+	font-size: 40px;
+	padding-top: 25%;
+	background-color: red;
+	transition: opacity 1s ease;
+	z-index: -9999;
+}
+#blood-overlay.visible {
+	z-index: 9999;
+	opacity: 0.75;
+}
+
+#blood-overlay a {
+	display: none;	
+	width: 150px;
+}
+#blood-overlay.visible a {
+	display: inline-block;
+}
+
+.btn-primary {
+	background-color: #000;
+	border-color: #322;
+}
+.btn-primary:hover {
+	background-color: #446;
+	border-color: #557;
+}
+.btn-secondary {
+	color: #373a3c;
+	background-color: #fff;
+	border-color: #ccc
+}
+.btn-secondary:hover {
+	color: #373a3c;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
+#debug-kit-toolbar {
+	display: none;
+}
+#stats {
+	-webkit-filter: hue-rotate(180deg);
+	-moz-filter: hue-rotate(180deg);
+	-o-filter: hue-rotate(180deg);
+	-ms-filter: hue-rotate(180deg);
+	filter: hue-rotate(180deg);
+}
+#stats, #stats * {
+	opacity: 0.75 !important;
+}
+#userinfo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: red;
+	background-color: rgba(255, 255, 255, 0);
+	font-size: 32px;
+}
+#life-indicator {
+	float: left;
+	margin-left: 5px;
+}
+#life-indicator * {
+	font-size: 1.1em;
+	transition: color 0.4s ease;
+}
+.life-warning {
+	color: white !important;
+	transition: none;
+}
+#lifepercentage {
+	position: relative;
+	top: -8px;
+	font-weight: 900;
+}
+
+.barredxp {
+	width: 100%;
+}
+.barre {
+	border-radius: 10px;
+	border: 1px solid #979797
+}
+#xp {
+	background-color: #FF5766;
+	height: 5px;
+	border-radius: 10px;
+}
+#xp-title {
+	font-size: 14px;
+	color: #ff5766;
+	display: block;
+}
+
+#badass-captions {
+	position: fixed;
+	width: 200px;
+	text-align: center;
+	left: calc(75% - 100px);
+	top: calc(50% - 65px);
+}
+#badass-captions {
+	color: #ffaa00;
+	text-shadow: 2px 2px 2px rgba(50, 50, 50, 1);
+}
+
+#badass-captions span {
+	-webkit-transform: scale(0.1);
+	-moz-transform: scale(0.1);
+	-ms-transform: scale(0.1);
+	-o-transform: scale(0.1);
+	transform: scale(0.1);
+	opacity: 0;
+	display: block;
+}
+#badass-captions span:nth-child(1) {
+	transition: all 0.8s ease;
+	transition-delay: 0s;
+	font-size: 34px;
+}
+#badass-captions span:nth-child(2) {
+	font-size: 26px;
+	transition: all 0.6s ease;
+	transition-delay: 0.2s;
+}
+#badass-captions span:nth-child(3) {
+	font-size: 18px;
+	transition: all 0.4s ease;
+	transition-delay: 0.4s;
+}
+
+#badass-captions.pop span {
+	opacity: 1;
+	-webkit-transform: translateY(-200px) scale(1);
+	-moz-transform: translateY(-200px) scale(1);
+	-ms-transform: translateY(-200px) scale(1);
+	-o-transform: translateY(-200px) scale(1);
+	transform: translateY(-200px) scale(1);
+}
+#retour-vestiaire {
+	position: fixed;
+	right: 3px;
+	top: 55px;
+	font-size: 14px;
+}

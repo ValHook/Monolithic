@@ -1,0 +1,97 @@
+@font-face {
+    font-family: arcade;
+    src: url(../fonts/arcade.ttf);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	background: url('../img/monolithic.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'arcade';
+	font-size: 19px;
+}
+/* HEADER */
+header {
+	margin-top: 50px;
+}
+#slogan {
+	font-style: italic;
+	margin-top: 20px
+}
+
+/* FOOTER */
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 32px;
+}
+
+footer > div {
+	float: left;
+	width: 33.3333333%;
+	display: inline-block;
+	height: 100%;
+	min-height: 1px;
+}
+
+.footer-green {
+	background-color: #0B604C;
+}
+
+.footer-blue {
+	background-color: #205068;
+}
+
+.footer-pink {
+	background-color: #7C343C;
+}
+
+/* header */
+#logo {
+	width: 60px;
+	height: auto;
+	float: left;
+}
+
+
+/* CONTENT */
+#hero {
+	margin: 60px auto 0 auto;
+	text-align: center;
+	max-width: 800px;
+}
+h1 {
+	font-size: 60px;
+}
+#cta-play {
+	background-color: #C20B46;
+	font-size: 40px;
+    padding-bottom: 0px;
+    padding-top: 7px;
+    margin-top: 30px;
+}
+#cta-play:hover {
+	background-color: #FF1058;
+}
+
+#credits {
+	position: fixed;
+	bottom: 1px;
+	text-align: center;
+	width: 100%;
+	z-index: 999;
+	margin-bottom: 0px;
+}

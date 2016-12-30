@@ -1,0 +1,14 @@
+{
+  "name": "threex.md2character",
+  "homepage": "https://github.com/jeromeetienne/threex.md2character",
+  "_release": "c1b991adf9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c1b991adf95b24fc516fe2224b45c9547e413c6e"
+  },
+  "_source": "git://github.com/jeromeetienne/threex.md2character.git",
+  "_target": "*",
+  "_originalSource": "threex.md2character",
+  "_direct": true
+}
